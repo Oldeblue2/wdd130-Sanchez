@@ -1,0 +1,153 @@
+/* Stylesheet by Anna Burke */
+/* Colors:
+    #F4A261 - PALE ORANGE
+    #264653 - DARK TEAL
+    #E76F51 - PALE RED
+    #2A9D8F - LIGHT TEAL  */
+
+*{
+    margin: 0;
+    padding: 0;
+ }    
+header{
+    background-color: #264653;
+    display: grid;
+    grid-template-columns: 20% 70% 1fr;
+    height: 150px;
+}
+header img{
+    grid-column: 1;
+    width: 100px;
+    border-radius: 50%;
+    border: solid 10px #f4a261;
+    /* margin: 10px 0px 10px 29px; */
+    margin: auto;
+    margin-left: 29px;
+}
+nav{
+    /* grid-column: 2; */
+    color: white;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    grid-column: 2;
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    margin-top: 45px;
+    font-size: 30px;
+}
+nav li a{
+    color: white;
+    text-decoration: none;
+    font-family: "Poppins";
+}
+nav li a:hover{
+    color: #2a9d8f;
+}
+
+h1{
+    font-family: "Open Sans";
+    line-height: 150px;
+    color:#264653;
+}
+#hero{
+    background-color: #f4a261;
+    text-align: center;
+    height: 150px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+body{
+    background-color:#2a9d8f;
+}
+
+#menu{
+    display: grid;
+    grid-template-columns: 15% repeat(3, 1fr) 15%;
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#menu img{
+    width: 200px;
+    border-radius: 20px;
+}
+
+#menu div{
+    margin: auto;
+    background-color: white;
+    padding: 5px;
+    border-radius: 20px;
+    transition: transform .2s ease-in-out;
+}
+
+#menu div:hover{
+    transform: scale(1.1);
+}
+
+#menu div h4{
+    text-align: center;
+    font-family: "Poppins";
+    margin: auto;
+    padding-top: 5px;
+}
+
+#menu div p{
+    text-align: center;
+    font-family: "Open Sans";
+    margin: auto;
+    padding-bottom: 5px;
+}
+
+#eggcheese{
+    grid-column: 2;
+    /* grid-row: 1; */
+}
+
+#veggie{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#blt{
+    grid-column: 3;
+    grid-row: 2;
+}
+
+#plain{
+    grid-column: 4;
+    grid-row: 2;
+}
+
+footer{
+    background-color:#264653;
+    color: white;
+    height: 75px;
+    display: grid;
+    grid-template-columns: 15% 1fr 15%; 
+}
+footer #container{
+    grid-column: 2;
+}
+footer p{
+    float: left;
+    line-height: 75px;
+    font-size: 15px;
+    font-family: "Open Sans";
+}
+footer a{
+    color: white;
+    line-height: 75px;
+    font-family: "Open Sans";
+    float: right;
+    padding-left: 5px;
+}
+footer a:hover{
+    color:#2a9d8f;
+}
