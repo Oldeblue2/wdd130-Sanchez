@@ -14,6 +14,7 @@ header{
     display: grid;
     grid-template-columns: 20% 70% 1fr;
     height: 150px;
+    
 }
 header img{
     grid-column: 1;
